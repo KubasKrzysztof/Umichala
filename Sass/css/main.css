@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.6rem;
+  color: #2e2e2e;
+  background-color: #d8d6d6;
+}/*# sourceMappingURL=main.css.map */
