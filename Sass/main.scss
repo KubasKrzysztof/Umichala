@@ -24,6 +24,17 @@ body {
 	max-width: 1200px;
 	width: 100%;
 }
+.section-title {
+	position: relative;
+	margin: 0 auto 2em;
+	padding: 1em;
+
+	font-size: 3.2rem;
+	color: $gold;
+	font-weight: 900;
+	width: fit-content;
+}
+
 .hero-shadow {
 	position: absolute;
 	top: 0;
@@ -37,7 +48,7 @@ body {
 //NAVIGATION
 
 nav {
-	position: sticky;
+	position: fixed;
 	width: 100%;
 	z-index: 15;
 }
@@ -61,7 +72,7 @@ nav {
 		justify-content: space-between;
 		align-items: center;
 		height: 100%;
-		background-color: $green-color;
+		background-color: $green-nav;
 	}
 	&__items {
 		position: absolute;
@@ -86,6 +97,7 @@ nav {
 }
 
 .desktop-nav {
+	
 	display: none;
 	height: 8rem;
 	background-color: $green-nav;
@@ -117,7 +129,7 @@ nav {
 		padding: 2.5rem 4rem;
 		font-size: 2.2rem;
 		font-weight: 700;
-		color: #ffeb00;
+		color: $gold;
 		text-decoration: none;
 		transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 	}
@@ -151,6 +163,40 @@ nav {
 		h1 {
 			margin: 1em;
 			font-weight: 700;
+		}
+	}
+}
+// About
+
+.about {
+	position: relative;
+	background-color: $green-nav;
+	&__boxes {
+		display: grid;
+	}
+	&__banner {
+		position: relative;
+		height: 30vh;
+
+		background-image: url(../../img/banner-mobile.jpg);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-attachment: scroll;
+		&-text{
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			font-size: 2.6rem;
+			height: 100%;
+			width: 100%;
+			color: $white;
+			h3{
+				padding: 1rem;
+				border: $white solid 2px
+			}
 		}
 	}
 }
