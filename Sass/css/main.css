@@ -22,6 +22,21 @@ body {
   width: 100%;
 }
 
+.section-heading {
+  position: relative;
+  margin-bottom: 2em;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffeb00;
+  letter-spacing: 2px;
+}
+
+.section-padding {
+  padding: 3em 2em;
+}
+
 .section-title {
   position: relative;
   margin: 0 auto 2em;
@@ -154,38 +169,37 @@ nav {
   font-weight: 700;
 }
 
-.about {
-  position: relative;
-  background-color: #61983b;
-}
-.about__boxes {
-  display: grid;
-}
-.about__banner {
-  position: relative;
-  height: 30vh;
-  background-image: url(../../img/banner-mobile.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-attachment: scroll;
-}
-.about__banner-text {
-  position: absolute;
+.about__box {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 2.6rem;
-  height: 100%;
-  width: 100%;
-  color: #fff;
+  flex-direction: column;
+  margin: 2em 0;
 }
-.about__banner-text h3 {
-  padding: 1rem;
-  border: #fff solid 2px;
+.about__img {
+  width: 100%;
+  height: 35vh;
+  margin-bottom: 1em;
+}
+.about__title {
+  margin-bottom: 1em;
+  text-align: center;
+}
+.about__text {
+  font-style: 1.4em;
 }
 
+@media (min-width: 576px) {
+  .about__box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .about__box-text {
+    margin-top: 1em;
+    width: 55%;
+  }
+  .about__box-img {
+    width: 40%;
+  }
+}
 @media (min-width: 992px) {
   .desktop-nav {
     display: flex;

@@ -24,6 +24,19 @@ body {
 	max-width: 1200px;
 	width: 100%;
 }
+.section-heading {
+	position: relative;
+	margin-bottom: 2em;
+	font-size: 3rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	color: $gold;
+	letter-spacing: 2px;
+}
+.section-padding {
+	padding: 3em 2em;
+}
 .section-title {
 	position: relative;
 	margin: 0 auto 2em;
@@ -97,7 +110,6 @@ nav {
 }
 
 .desktop-nav {
-	
 	display: none;
 	height: 8rem;
 	background-color: $green-nav;
@@ -167,39 +179,57 @@ nav {
 	}
 }
 // About
-
 .about {
-	position: relative;
-	background-color: $green-nav;
-	&__boxes {
-		display: grid;
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin: 2em 0;
 	}
-	&__banner {
-		position: relative;
-		height: 30vh;
-
-		background-image: url(../../img/banner-mobile.jpg);
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
-		background-attachment: scroll;
-		&-text{
-			position: absolute;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-			font-size: 2.6rem;
-			height: 100%;
-			width: 100%;
-			color: $white;
-			h3{
-				padding: 1rem;
-				border: $white solid 2px
-			}
-		}
+	&__img {
+		width: 100%;
+		height: 35vh;
+		margin-bottom: 1em;
+	}
+	&__title {
+		margin-bottom: 1em;
+		text-align: center;
+	}
+	&__text {
+		font-style: 1.4em;
 	}
 }
+// .about {
+// 	position: relative;
+// 	background-color: $green-nav;
+// 	&__boxes {
+// 		display: grid;
+// 	}
+// 	&__banner {
+// 		position: relative;
+// 		height: 30vh;
+
+// 		background-image: url(../../img/banner-mobile.jpg);
+// 		background-size: cover;
+// 		background-position: center;
+// 		background-attachment: fixed;
+// 		background-attachment: scroll;
+// 		&-text{
+// 			position: absolute;
+// 			display: flex;
+// 			justify-content: center;
+// 			align-items: center;
+// 			text-align: center;
+// 			font-size: 2.6rem;
+// 			height: 100%;
+// 			width: 100%;
+// 			color: $white;
+// 			h3{
+// 				padding: 1rem;
+// 				border: $white solid 2px
+// 			}
+// 		}
+// 	}
+// }
 
 @import './small';
 @import './medium';

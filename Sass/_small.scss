@@ -1,0 +1,15 @@
+@media (min-width: 576px) {
+	.about {
+		&__box {
+			flex-direction: row;
+			justify-content: space-between;
+			&-text {
+                margin-top: 1em;
+				width: 55%;
+			}
+			&-img {
+				width: 40%;
+			}
+		}
+	}
+}
