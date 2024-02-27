@@ -186,6 +186,28 @@ nav {
 .about__text {
   font-style: 1.4em;
 }
+.about__banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-image: url(../../img/poland-5328328_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-attachment: scroll;
+  z-index: 0;
+}
+.about__banner-text {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 1em;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+}
 
 @media (min-width: 576px) {
   .about__box {
@@ -209,5 +231,8 @@ nav {
   }
   .header {
     background-image: url(../../img/lake-2134181_1920.jpg);
+  }
+  .about__banner-text {
+    font-size: 1.9em;
   }
 }/*# sourceMappingURL=main.css.map */

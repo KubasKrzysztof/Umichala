@@ -197,6 +197,28 @@ nav {
 	&__text {
 		font-style: 1.4em;
 	}
+	&__banner {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 30vh;
+		background-image: url(../../img/poland-5328328_1920.jpg);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-attachment: scroll;
+		z-index: 0;
+		&-text {
+			color: $white;
+			border: 2px solid $white;
+			padding: 1em;
+			text-transform: uppercase;
+			font-size: 1em;
+			font-weight: 700;
+		}
+	}
 }
 // .about {
 // 	position: relative;
