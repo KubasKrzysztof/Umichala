@@ -9,11 +9,16 @@
 	.header {
 		background-image: url(../../img/lake-2134181_1920.jpg);
 	}
-    .about{
-        &__banner{
-            &-text{
-                font-size: 1.9em;
-            }
-        }
-    }
+	.about {
+		&__banner {
+			&-text {
+				font-size: 1.9em;
+			}
+		}
+	}
+	.gallery {
+		&__box {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
 }

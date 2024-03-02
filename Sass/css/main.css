@@ -254,4 +254,7 @@ nav {
   .about__banner-text {
     font-size: 1.9em;
   }
+  .gallery__box {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }/*# sourceMappingURL=main.css.map */
