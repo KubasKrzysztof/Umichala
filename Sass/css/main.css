@@ -228,6 +228,38 @@ nav {
   height: 100%;
 }
 
+.oferts__title {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-bottom: 2em;
+  text-align: center;
+  color: red;
+}
+.oferts__text li {
+  margin: 0.2em;
+}
+.oferts__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 2em 0 2em 0;
+}
+.oferts__btn a {
+  padding: 1em;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  background-color: #486755;
+  text-decoration: none;
+  transition: 0.3s background-color, 0.3s transform;
+}
+.oferts__btn a:hover {
+  background-color: #375142;
+  transform: scale(1.1);
+}
+
 @media (min-width: 576px) {
   .about__box {
     flex-direction: row;
