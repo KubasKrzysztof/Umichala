@@ -21,4 +21,17 @@
 			grid-template-columns: repeat(4, 1fr);
 		}
 	}
+	.contact {
+		&__box {
+			&-adres {
+				display: flex;
+				flex-direction: row;
+                justify-content: space-between;
+			}
+            &-map{
+                height: 80%;
+                width: 50%;
+            }
+		}
+	}
 }
