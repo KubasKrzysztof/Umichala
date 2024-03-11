@@ -256,6 +256,7 @@ nav {
   padding: 1em;
   border-radius: 8px;
   color: #fff;
+  text-align: center;
   border: none;
   background-color: #486755;
   text-transform: uppercase;
@@ -288,11 +289,13 @@ nav {
 .contact__box-fb i {
   font-size: 7rem;
   margin: 2rem 0;
+  text-decoration: none;
 }
 .contact__box-map {
   margin: 1em 0;
   border: 1px solid #61983b;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+  text-decoration: none;
 }
 .contact__box-map iframe {
   width: 100%;
@@ -301,6 +304,9 @@ nav {
 .footer {
   background-color: #61983b;
   color: #fff;
+  padding: 1em 1em;
+  border-top: 1px solid #191919;
+  text-align: center;
 }
 
 @media (min-width: 576px) {

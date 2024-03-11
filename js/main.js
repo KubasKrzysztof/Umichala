@@ -1,6 +1,8 @@
 const navMobile = document.querySelector('.mobile-nav__items')
 const navBtn = document.querySelector('.hamburger')
 const allNavItem = document.querySelectorAll('.mobile-nav__nav-link')
+const footerYear = document.querySelector('.footer__year')
+
 const handleNav = () => {
 	navBtn.classList.toggle('is-active')
 	navMobile.classList.toggle('active')
@@ -18,3 +20,10 @@ const handleNav = () => {
 	})
 }
 navBtn.addEventListener('click', handleNav)
+
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
+
+handleCurrentYear()
