@@ -77,11 +77,13 @@ nav {
 	}
 	&__logo {
 		display: flex;
-		// // margin: 1rem;
+		justify-content: center;
+		align-items: center;
 
 		img {
-			height: 26rem;
+			height: 9rem;
 			width: 28rem;
+			margin-top: 1rem;
 		}
 	}
 	&__top-bar {
@@ -125,12 +127,14 @@ nav {
 	&__logo {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
 		align-items: center;
 		text-decoration: none;
 
 		img {
-			height: 13rem;
+			height: 8rem;
 			margin-left: 2rem;
+			margin-top: 1rem;
 		}
 	}
 	&__items {
@@ -334,6 +338,13 @@ nav {
 //region
 
 .region {
+	&__section-padding {
+		padding: 0em 1em;
+	}
+	.section-heading {
+		padding-top: 4em;
+	}
+
 	&__contener {
 		max-width: 800px;
 		margin: 2em auto;

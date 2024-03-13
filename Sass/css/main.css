@@ -77,10 +77,13 @@ nav {
 }
 .mobile-nav__logo {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mobile-nav__logo img {
-  height: 26rem;
+  height: 9rem;
   width: 28rem;
+  margin-top: 1rem;
 }
 .mobile-nav__top-bar {
   display: flex;
@@ -122,12 +125,14 @@ nav {
 .desktop-nav__logo {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   text-decoration: none;
 }
 .desktop-nav__logo img {
-  height: 13rem;
+  height: 8rem;
   margin-left: 2rem;
+  margin-top: 1rem;
 }
 .desktop-nav__items {
   display: flex;
@@ -309,6 +314,12 @@ nav {
   text-align: center;
 }
 
+.region__section-padding {
+  padding: 0em 1em;
+}
+.region .section-heading {
+  padding-top: 4em;
+}
 .region__contener {
   max-width: 800px;
   margin: 2em auto;
